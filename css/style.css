@@ -334,10 +334,10 @@ Landing
     opacity: 0.5;
   }
   .front-image-first-animation {
-    animation: front-image-first 5s infinite, initial-image 1s forwards;
+    animation: front-image-first 5s infinite;
   }
   .back-image-first-animation {
-    animation: back-image-first 5s infinite, initial-image 1s forwards;
+    animation: back-image-first 5s infinite;
     animation-delay: 0.5s;
   }
   .back-image {
