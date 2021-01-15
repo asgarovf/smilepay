@@ -334,7 +334,7 @@ Landing
     opacity: 0.5;
   }
   .front-image-first-animation {
-    animation: front-image-first 5s infinite;
+    animation: front-image-first 5s infinite, initial-image 2.5s forwards;
   }
   .back-image-first-animation {
     animation: back-image-first 5s infinite;
@@ -351,6 +351,15 @@ Landing
   .ellipse-play {
     position: absolute;
     left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    opacity: 0.2;
+    animation: ellipse-play 1s linear infinite;
+  }
+  .ellipse-play-sm {
+    position: absolute;
+    left: 35%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 0%;
@@ -382,12 +391,20 @@ Landing
     z-index: 205 !important;
     position: relative;
     transform: translateY(25%);
-    left: 15%;
   }
 }
 @media (min-width: 1024px) {
 }
 @media (min-width: 1200px) {
+  .ellipse-play {
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    opacity: 0.2;
+    animation: ellipse-play 1s linear infinite;
+  }
 }
 @media (min-width: 1600px) {
 }
