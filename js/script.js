@@ -33,7 +33,7 @@ $(document).ready(function () {
 
     var scrolltop = $("#phone_1").offset();
     var scrolltop2 = $("#phone_2").offset();
-    if (scroll_pos > scrolltop.top - 600) {
+    if (scroll_pos > scrolltop.top - 800) {
       $("#phone1-image-div").addClass("phone1-image-animation");
       $("#phone1-image-div-sm").addClass("phone1-image-animation");
       $("#phone1-text-div").addClass("phone1-text-div-animation");
