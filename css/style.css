@@ -334,7 +334,8 @@ Landing
     opacity: 0.5;
   }
   .front-image-first-animation {
-    animation: front-image-first 5s infinite, initial-image 2.5s forwards;
+    animation: front-image-first 5s infinite, initial-image 2.5s;
+    animation-delay: 4s;
   }
   .back-image-first-animation {
     animation: back-image-first 5s infinite;
