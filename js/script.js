@@ -64,6 +64,7 @@ $(document).ready(function () {
 
 window.onload = function () {
   setTimeout(function () {
+    $(document).scrollTop(0);
     $(".loader-bg").fadeToggle();
     $("body").css("overflow-y", "visible");
   }, 1000);
