@@ -58,3 +58,10 @@ $(document).ready(function () {
     }
   });
 });
+
+window.onload = function () {
+  setTimeout(function () {
+    $(".loader-bg").fadeToggle();
+    $("body").css("overflow-y", "visible");
+  }, 1000);
+};
