@@ -36,7 +36,7 @@ $(document).ready(function () {
 
     var scrolltop = $("#phone_1").offset();
     var scrolltop2 = $("#phone_2").offset();
-    if (topOfWindow + windowHeight - 200 > scrolltop.top) {
+    if (topOfWindow + windowHeight - 50 > scrolltop.top) {
       $("#phone1-image-div").addClass("phone1-image-animation");
       $("#phone1-image-div-sm").addClass("phone1-image-animation");
       $("#phone1-text-div").addClass("phone1-text-div-animation");
@@ -48,7 +48,7 @@ $(document).ready(function () {
       $("#div2-text").addClass("div2-text-animation");
     }
 
-    if (topOfWindow + windowHeight - 200 > scrolltop2.top) {
+    if (topOfWindow + windowHeight - 50 > scrolltop2.top) {
       $("#phone2-image-div").addClass("phone1-image-animation");
       $("#phone2-image-div-sm").addClass("phone1-image-animation");
       $("#phone2-text-div").addClass("phone1-text-div-animation");
@@ -66,7 +66,7 @@ setTimeout(function () {
   $(document).scrollTop(0);
   $(".loader-bg").fadeToggle();
   $("body").css("overflow-y", "visible");
-}, 3000);
+}, 3500);
 
 $("#q1-box").click(() => {
   if ($("#q1-box").hasClass("closed")) {
