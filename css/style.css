@@ -16,6 +16,29 @@ body {
   overflow-y: hidden;
 }
 
+.owl-dot::before {
+  content: "\2022";
+  color: var(--dark-grey);
+  font-size: 50px;
+  margin-left: 5px;
+}
+
+.owl-dot:focus {
+  outline: none;
+}
+
+.owl-dot.active::before {
+  content: "\2022";
+  color: var(--main-text); !important;
+  font-size: 50px;
+  margin-left: 5px;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 1rem;
+}
+
 .loader-bg {
   position: fixed;
   z-index: 9999;
@@ -1013,7 +1036,8 @@ Video
     align-items: center;
   }
   .video-container {
-    height: 120vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     width: 100vw;
     overflow: hidden;
     position: relative;
@@ -1081,24 +1105,6 @@ Video
   }
 }
 @media (min-width: 1600px) {
-}
-
-@media (min-height: 1024px) and (min-width: 768px) {
-  .video-container {
-    height: 80vh;
-    width: 100vw;
-    overflow: hidden;
-    position: relative;
-  }
-}
-
-@media (min-height: 1366px) and (min-width: 992px) {
-  .video-container {
-    height: 40vh;
-    width: 100vw;
-    overflow: hidden;
-    position: relative;
-  }
 }
 
 /*
@@ -1305,6 +1311,217 @@ Store
   }
 }
 @media (min-width: 1024px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1600px) {
+}
+
+/*
+Reviews
+*/
+
+@media (min-width: 0px) {
+  #reviews {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8rem;
+  }
+  .comments {
+    margin-top: 3rem;
+  }
+  .comment {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .comment-box {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .comment-bottom {
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  .comment-bottom img {
+    padding-left: 1em;
+    margin-right: 1.5em;
+  }
+  .title {
+    font-weight: bold;
+    color: var(--main-text);
+    font-size: 14px;
+  }
+  .company {
+    font-size: 14px;
+    color: var(--dark-grey);
+  }
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+  .title {
+    font-weight: bold;
+    color: var(--main-text);
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1600px) {
+}
+
+/*
+FAQ
+*/
+
+@media (min-width: 0px) {
+  #faq {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8rem;
+  }
+  .faq-title {
+    text-align: center;
+    color: var(--main-text);
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .faq-subtitle {
+    text-align: center;
+    color: var(--dark-grey);
+  }
+  .question-box {
+    display: flex;
+    align-items: center;
+  }
+  .questions-row {
+    margin-top: 4rem;
+  }
+  .question-text {
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 100%;
+    color: var(--main-text);
+  }
+  .question-opened {
+    margin-left: 3.4rem;
+    font-size: 80%;
+    color: var(--dark-grey);
+  }
+  .q-open {
+    display: inherit;
+  }
+  .q-close {
+    display: none;
+  }
+  .question-col {
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+  .question-text {
+    font-size: 110%;
+  }
+  .question-opened {
+    font-size: 80%;
+  }
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1200px) {
+  .faq-title {
+    text-align: center;
+    color: var(--main-text);
+    font-size: 36px;
+  }
+}
+@media (min-width: 1600px) {
+}
+
+/*
+UI
+*/
+
+@media (min-width: 0px) {
+  #user-interface {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8rem;
+  }
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1600px) {
+}
+
+
+/*
+Footer
+*/
+
+
+
+@media (min-width: 0px) {
+  #footer{
+    background: var(--main-text);
+    color:white !important;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .footer-header {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .footer-subheader {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .footer-subheader p {
+    color: white;
+  }
+  .footer-subheader p:hover {
+    color: var(--dark-grey)
+  }
+  .footer-subheader a:hover {
+    color: var(--dark-grey)
+    text-decoration: none;
+  }
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+  .footer-header {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+  }
+  .footer-subheader {
+    margin-top: 30px;
+    text-align: left;
+  }
 }
 @media (min-width: 1200px) {
 }
