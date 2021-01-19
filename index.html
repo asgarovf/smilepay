@@ -1,681 +1,748 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- META TAGS -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <title>SmilePay</title>
-  </head>
-  <body> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Finity - Landing Page Template </title>
+  <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="./fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Custom stylesheet -->
+</head>
+
+<body data-theme="light">
+  <div class="site-wrapper overflow-hidden ">
+    <div id="loading">
+      <img src="./image/preloader.gif" alt="">
+    </div>
+    <!-- Header Area -->
+    <!-- Header Area -->
+    <header class="site-header site-header--menu-right px-7 px-lg-10 z-index-99 dynamic-sticky-bg site-header--absolute site-header--sticky">
+      <div class="container-fluid">
+        <nav class="navbar site-navbar offcanvas-active navbar-expand-lg  px-0">
+          <!-- Brand Logo-->
+          <div class="brand-logo mt-3 mt-md-0"><a class="nav-brand" href="#">
+              <!-- light version logo (logo must be black)-->
+              <!-- <img src="image/logo-main-black.png" alt="" class="light-version-logo"> -->
+              <!-- Dark version logo (logo must be White)-->
+             <!--  <img src="image/logo-main-white.png" alt="" class="dark-version-logo"> -->
+             SmilePay
+            </a></div>
+          <div class="collapse navbar-collapse" id="mobile-menu">
+            <div class="navbar-nav-wrapper">
+              <ul class="navbar-nav main-menu">
+                <li class="nav-item">
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" href="#features" role="button" >Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" href="#features" role="button">For businesses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" href="#features" role="button">How it works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" href="#features" role="button">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" href="#features" role="button">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" id="navbarDropdown" href="#features" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN <i class="icon icon-small-down"></i></a>
+                  <ul class="gr-menu-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="drop-menu-item">
+                      <a href="#">
+                        AZ
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+            </div>
+            <button class="d-block d-lg-none offcanvas-btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+              <i class="gr-cross-icon"></i>
+            </button>
+          </div>
+          <div class="header-btn ml-auto ml-lg-6 d-none d-sm-block">
+            <a class="btn btn btn-pumpkin btn-sm-2 rounded-5 h-50 font-size-5 font-weight-bold p-5" href="#">
+              Download the app
+            </a>
+          </div>
+          <!-- Mobile Menu Hamburger-->
+          <button class="navbar-toggler btn-close-off-canvas  hamburger-icon border-0" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <i class="icon icon-simple-remove icon-close"></i> -->
+            <span class="hamburger hamburger--squeeze js-hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+            </span>
+          </button>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+    <!-- navbar- -->
+    <!-- End Header Area -->
+    <!-- heroSix Area -->
+    <div class="position-relative pt-25 pt-md-31 pt-lg-35 pb-15 pb-md-19 pb-lg-33 position-relative overflow-hidden">
+      <div class="container position-static">
+        <div class="row align-items-center justify-content-center position-static">
+          <!-- Hero Image -->
+          <div class="col-xl-6 col-lg-6 col-md-9 col-xs-8 position-static">
+            <div class="l6-hero-image-group">
+              <img class="w-100" src="./image/home-6/png/hero-mobile.png" alt="" data-aos="fade-up" data-aos-once="true">
+              <div class="img-1">
+                <img class="w-100" src="./image/home-6/png/cirle-yellow-shape.png" alt="" data-aos="fade-right" data-aos-delay="300" data-aos-once="true">
+              </div>
+            </div>
+          </div>
+          <!-- End Hero Image -->
+          <!-- Hero Content -->
+          <div class="col-lg-6 col-md-9 col-sm-11">
+            <div class="mt-8 mt-lg-0 pr-md-11 pr-lg-0 pr-xl-10" data-aos="fade-left" data-aos-delay="500" data-aos-once="true">
+              <h1 class="font-size-13 mb-8 pr-xs-31 pr-sm-21 pr-md-10 pr-lg-0 line-height-84">Pay with Your Smile.</h1>
+              <p class="font-size-7 mb-0 pr-sm-10 pr-md-10 pr-lg-0 pr-xl-18">Facial recognition payment
+                for everyday shopping.</p>
+              <div class="mt-10">
+                <a class="btn btn-dark-green btn-3 rounded-5" href="#">Download the app</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Hero Content -->
+        </div>
+      </div>
+      <div class="absolute-bottom-right mb-13 mb-md-17 mb-lg-26 d-none d-sm-block mr-n25 mr-md-n15 mr-lg-n7" data-aos="fade-left" data-aos-delay="500" data-aos-once="true">
+        <img class="w-50 w-md-75 w-lg-100" src="./image/home-6/png/hero-shape.png" alt="">
+      </div>
+    </div>
+    <!-- End heroSix Area -->
+    <!-- videoLink Area -->
+    <div class="bg-purple-heart py-10">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="text-center" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+              <a class="video-btn text-white font-size-6 mb-0" href="https://www.youtube.com/watch?v=LWZ7iytIA6k">
+                <span class="text-golden-yellow mr-3">
+                                <i
+                                class="fa fa-play-circle"></i>
+                            </span> Finity takes only 5 mins to setup your mobile app
+                from
+                website.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End videoLink Area -->
+    <!-- featureSection Area -->
+    <div class="pt-14 pt-md-18 pt-lg-26 pb-14 pb-md-18 pb-lg-26 bg-default-6">
+      <div class="container">
+        <div class="row justify-content-center justify-content-lg-start">
+          <div class="col-xl-6 col-lg-7 col-md-8">
+            <div class="mb-0 px-xs-15 px-md-0 mb-10 text-center text-lg-left" data-aos="fade-up" data-aos-delay="400" data-aos-once="true">
+              <h2 class="font-size-11">For everyday, just Speak-to-Chat.</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xl-6 col-lg-7 col-md-8 order-2 order-lg-1">
+            <div class="">
+              <!-- Services -->
+              <div class="row justify-content-center">
+                <div class="col-sm-6 col-xs-7">
+                  <div class="pt-13 pt-lg-15 pr-sm-0 pr-xs-10" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                    <div class="square-60 bg-blue-3 shadow-dodger-blue-3 rounded-10 text-white font-size-7">
+                      <i class="fa fa-link"></i>
+                    </div>
+                    <div class="mt-12 pr-lg-10 pr-md-0 pr-xs-8">
+                      <h4 class="font-size-7 mb-5">Cashless, Cardless Payments</h4>
+                      <!-- <p class="font-size-5 mb-0">Typewolf is an independent text resource created Finity. -->
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-7">
+                  <div class="pt-13 pt-lg-15 pr-sm-0 pr-xs-10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
+                    <div class="square-60 bg-sunset shadow-sunset rounded-10 text-white font-size-7">
+                      <i class="fa fa-level-up-alt"></i>
+                    </div>
+                    <div class="mt-12 pr-lg-10 pr-md-0 pr-xs-8">
+                      <h4 class="font-size-7 mb-5">All in One. Anytime. Anywhere.</h4>
+                      <!-- <p class="font-size-5 mb-0">Typewolf is an independent text resource created Finity. -->
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-7">
+                  <div class="pt-13 pt-lg-15 pr-sm-0 pr-xs-10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600" data-aos-once="true">
+                    <div class="square-60 bg-light-green shadow-light-green rounded-10 text-white font-size-7">
+                      <i class="fa fa-hourglass-half"></i>
+                    </div>
+                    <div class="mt-12 pr-lg-10 pr-md-0 pr-xs-8">
+                      <h4 class="font-size-7 mb-5">Faster Payments, More Time to Enjoy Life</h4>
+                      <!-- <p class="font-size-5 mb-0">Typewolf is an independent text resource created Finity. -->
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-7">
+                  <div class="pt-13 pt-lg-15 pr-sm-0 pr-xs-10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="900" data-aos-once="true">
+                    <div class="square-60 bg-dodger-blue-1 shadow-dodger-blue-1 rounded-10 text-white font-size-7">
+                      <i class="fa fa-link"></i>
+                    </div>
+                    <div class="mt-12 pr-lg-10 pr-md-0 pr-xs-8">
+                      <h4 class="font-size-7 mb-5">Much safer, more secure!</h4>
+                    <!--   <p class="font-size-5 mb-0">Typewolf is an independent text resource created Finity. -->
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Services -->
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-5 col-md-8 order-1 order-lg-2">
+            <div class="mt-lg-16 mr-lg-n20 mr-xl-n25" data-aos="fade-left" data-aos-delay="500" data-aos-once="true">
+              <img class="w-100" src="./image/home-6/png/feature-right-img.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End featureSection Area -->
+    <!-- contentOne Area -->
+    <div class="pt-23 pt-md-25 pt-lg-35 pb-9 pb-md-14 pb-lg-33 overflow-hidden position-relative">
+      <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-lg-start">
+          <!-- Image Section -->
+          <div class="col-xl-5 col-xs-4">
+            <div class="l6-content-image-group">
+              <div class="img-1">
+                <img class="w-100" src="./image/home-6/png/green-dot-pattern.png" alt="" data-aos="fade-down" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
+              </div>
+              <div class="img-2">
+                <img class="w-100" src="./image/home-6/png/content-1-mobile.png" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+              </div>
+            </div>
+          </div>
+          <!-- Content Section -->
+          <div class="col-lg-6 col-md-8 col-xs-10 ml-lg-10 ml-xl-10">
+            <div class="pt-7 pb-7 pb-lg-17 pl-sm-5 pl-md-9 pl-lg-10">
+              <h2 class="font-size-11 mb-9" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">Faster Payments, <br class="d-none d-xs-block"> Better Control over Finances.</h2>
+              <p class="font-size-7 mb-0 pr-xl-13" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">SmilePay is a super intuitive money management app designed to help you see your bank balance,
+                 track your spending, and analyze your habits.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End contentOne Area -->
+    <!-- contentTwo Area -->
+    <div class="bg-default-6 pt-14 pt-md-19 pt-lg-34 pb-9 pb-md-14 pb-lg-34 overflow-hidden position-relative">
+      <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-lg-start">
+          <!-- Content Section -->
+          <div class="col-xl-5 col-lg-6 col-md-8 col-xs-10 order-2 order-md-1">
+            <div class="pt-7 pb-7 pr-sm-5 pr-md-9 pr-lg-0">
+              <h2 class="font-size-11 mb-9 pr-sm-18 pr-md-10 pr-lg-5 pr-xl-5" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">Enjoy the discounts and rewards.</h2>
+              <p class="font-size-7 mb-0" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">You can see nearby personalized cash-back, discount and rewards
+                 offers using the SmilePay app. Get the most and the best out of your shopping experience with personalized offers
+                  from your favorite stores. .</p>
+            </div>
+          </div>
+          <!-- Content Image Section -->
+          <div class="col-xl-6 offset-xl-1 col-lg-6 col-xs-4 order-1 order-md-2">
+            <div class="l6-content-image-group-2 ml-lg-18">
+              <div class="img-1">
+                <img class="w-100" src="./image/home-6/png/yellow-small-shape.png" alt="" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
+              </div>
+              <div class="img-2">
+                <img class="w-100" src="./image/home-6/png/content-2-mobile.png" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End contentTwo Area -->
+    <!-- contentTwo Area -->
+    <div class="pt-23 pt-md-25 pt-lg-33 pb-11 pb-md-14 pb-lg-33 overflow-hidden position-relative">
+      <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-lg-start">
+          <div class=" col-lg-5 col-md-4 col-xs-5">
+            <div class="l6-content-image-group-3 mr-md-0 mr-lg-15 mr-xl-12">
+              <div class="img-1">
+                <img class="w-100" src="./image/home-6/png/green-shape.png" alt="" data-aos="fade-down" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
+              </div>
+              <div class="img-2">
+                <img class="w-100" src="./image/home-6/png/content-3-mobile.png" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-8 col-xs-10 ml-xl-19">
+            <div class="pt-5 pb-7 pr-sm-5 pr-md-0 ml-md-10 ml-xl-0">
+              <h2 class="font-size-11 mb-9 pr-xs-10 pr-md-0" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">You are safe. Your data is safe.</h2>
+              <p class="font-size-7 mb-0 pr-lg-0 pr-xl-22" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">We can’t stress it enough: your privacy,
+                 your safety and security are our utmost priority. This is why we are making sure to apply all security measures provided by the GDPR,
+                  MasterCard, Visa, American Express, central banks, and your local bank so that you can safely enjoy SmilePay.</p>
+              <div class="mt-13" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                <a class="btn btn-dark-green btn-3 rounded-5" href="#">Download the app</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End contentTwo Area -->
+    <!-- screenShot Area -->
+    <div class="bg-purple-heart pt-14 pb-15 pt-md-17 pb-md-19 pt-lg-25 pb-lg-26">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <div class="text-center dark-mode-texts mb-8 mb-lg-18">
+              <h2 class="font-size-11">Inside our app</h2>
+              <p class="font-size-7 mb-0 opacity-7">Sophisticated styling with exceptional comfort. Super-soft, pressure-relieving earpads in foamed urethane.</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Section Title -->
+      </div>
+      <!-- Screenshot Area -->
+      <div class="screenshot-slider-wrapper mb-5">
+        <div class="screenshot-slider">
+          <!-- single-slide Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/home-6/png/screenshot-1.png" alt="" />
+            </div>
+          </div>
+          <!-- / .single-slide Area -->
+          <!-- single-slide Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/home-6/png/screenshot-2.png" alt="" />
+            </div>
+          </div>
+          <!-- / .single-slide Area -->
+          <!-- single-slide Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/home-6/png/screenshot-3.png" alt="" />
+            </div>
+          </div>
+          <!-- / .single-slide Area -->
+          <!-- single-slide Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/home-6/png/screenshot-4.png" alt="" />
+            </div>
+          </div>
+          <!-- / .single-slide Area -->
+          <!-- single-slide Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/home-6/png/screenshot-5.png" alt="" />
+            </div>
+          </div>
+          <!-- / .single-slide Area -->
+          <!-- Screenshot Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/home-6/png/screenshot-6.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- / .Screenshot Area -->
+        <div class="phone-bg-img">
+          <img src="./image/home-6/png/mobile-frame.png" alt="" />
+        </div>
+      </div>
+      <div class="screenshots-dots pt-5 pt-md-10"></div>
+      <!-- / .Screenshot Area -->
+    </div>
+    <!-- End screenShot Area -->
+    <!-- Testimonial Area -->
+    <div class="pt-14 pt-md-18 pt-lg-24 pb-15 pb-md-19 pb-lg-28 position-relative">
+      <div class="l6-shape-2 absolute-top-right mt-28 mr-n15">
+        <img src="./image/home-6/png/l6-cutomer-review-shape.png" alt="">
+      </div>
+      <div class="container">
+        <!-- Section Title -->
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <div class="text-center mb-13 mb-lg-21">
+              <h2 class="font-size-11 mb-7">Customers loving it</h2>
+              <p class="font-size-7 mb-0 px-xl-10">Your app is your tool for better solution with your
+                followers, making it easier for them to keep up to date.</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Section Title -->
+        <div class="row">
+          <div class="col-12">
+            <div class="l6-testimonial">
+              <!-- Single Testimonial -->
+              <div class="single-testimoial bg-white border border-default-color-5 rounded-10 pt-7 pb-7 pt-sm-11 pt-md-11 pb-sm-10 pb-md-10 pl-7 pl-sm-11 pl-md-11 pr-7 pr-md-12 mx-md-6 focus-reset">
+                <div class="mb-10">
+                  <img src="./image/home-6/png/l6-review-star.png" alt="">
+                </div>
+                <p class="font-size-8 mb-13 pr-sm-5 pr-md-0 pr-xl-4 text-dark-cloud">Your app is your tool for better solution with your followers, making it easier for them to keep up to date.</p>
+                <div class="d-flex align-items-center">
+                  <div class="mr-6">
+                    <img src="./image/home-6/png/user-img-1.png" alt="">
+                  </div>
+                  <div class="info">
+                    <h5 class="font-size-7 text-dark-cloud mb-0">Alena Herwitz</h5>
+                    <p class="font-size-5 text-stone mb-0">www.magsite.com</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Testimonial -->
+              <!-- Single Testimonial -->
+              <div class="single-testimoial bg-white border border-default-color-5 rounded-10 pt-7 pb-7 pt-sm-11 pt-md-11 pb-sm-10 pb-md-10 pl-7 pl-sm-11 pl-md-11 pr-7 pr-md-12 mx-md-6 focus-reset">
+                <div class="mb-10">
+                  <img src="./image/home-6/png/l6-review-star.png" alt="">
+                </div>
+                <p class="font-size-8 mb-13 pr-sm-5 pr-md-0 pr-xl-4 text-dark-cloud">Your app is your tool for better solution with your followers, making it easier for them to keep up to date.</p>
+                <div class="d-flex align-items-center">
+                  <div class="mr-6">
+                    <img src="./image/home-6/png/user-img-2.png" alt="">
+                  </div>
+                  <div class="info">
+                    <h5 class="font-size-7 text-dark-cloud mb-0">Maren Westervelt</h5>
+                    <p class="font-size-5 text-stone mb-0">www.itsmaren.net</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Testimonial -->
+              <!-- Single Testimonial -->
+              <div class="single-testimoial bg-white border border-default-color-5 rounded-10 pt-7 pb-7 pt-sm-11 pt-md-11 pb-sm-10 pb-md-10 pl-7 pl-sm-11 pl-md-11 pr-7 pr-md-12 mx-md-6 focus-reset">
+                <div class="mb-10">
+                  <img src="./image/home-6/png/l6-review-star.png" alt="">
+                </div>
+                <p class="font-size-8 mb-13 pr-sm-5 pr-md-0 pr-xl-4 text-dark-cloud">Your app is your tool for better solution with your followers, making it easier for them to keep up to date.</p>
+                <div class="d-flex align-items-center">
+                  <div class="mr-6">
+                    <img src="./image/home-6/png/user-img-1.png" alt="">
+                  </div>
+                  <div class="info">
+                    <h5 class="font-size-7 text-dark-cloud mb-0">Maren Westervelt</h5>
+                    <p class="font-size-5 text-stone mb-0">www.itsmaren.net</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Testimonial -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
-    <div class="loader-bg">
-      <div class="loader"></div>
+
+    <div class="pt-10 pt-md-10 pt-lg-10 pb-13 pb-md-18 pb-lg-23">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-9">
+            <div class="text-center mb-13 mb-lg-18">
+              <h2 class="font-size-11 mb-7">Frequently Asked Question</h2>
+              <p class="font-size-7 mb-0 px-md-10 px-xl-13">Our focus is always on finding the best people to work with. Our
+                bar is high, but you look ready to take on the challenge.</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Section Title -->
+        <!-- Faqs -->
+        <!-- Faqs -->
+        <div class="row justify-content-center">
+          <!-- Single Faq -->
+          <div class="col-lg-6 col-md-10">
+            <div class="d-flex mb-10 mb-lg-17">
+              <div class="mr-6">
+                <div class="bg-light-orange circle-28 text-white mt-1">
+                  <i class="fa fa-question"></i>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="font-size-7 mb-7">What is SmilePay?</h4>
+                <p class="font-size-5 pr-md-10 pr-lg-0 mb-0">SmilePay is a facial recognition payment solution for everyday shopping at retail and online.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Faq -->
+          <!-- Single Faq -->
+          <div class="col-lg-6 col-md-10">
+            <div class="d-flex mb-10 mb-lg-17">
+              <div class="mr-6">
+                <div class="bg-light-orange circle-28 text-white mt-1">
+                  <i class="fa fa-question"></i>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="font-size-7 mb-7">How do I use SmilePay?</h4>
+                <p class="font-size-5 pr-md-10 pr-lg-0 mb-0">Download the app and register with your Apple ID, Google account or your email. Add your bank card, scan your face and your national ID or driver’s license, and you are good to go. At stores mention to pay with SmilePay. For online shopping, just click on the SmilePay logo for faster checkout and payment.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Faq -->
+          <!-- Single Faq -->
+          <div class="col-lg-6 col-md-10">
+            <div class="d-flex mb-10 mb-lg-17">
+              <div class="mr-6">
+                <div class="bg-light-orange circle-28 text-white mt-1">
+                  <i class="fa fa-question"></i>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="font-size-7 mb-7">Why do I scan my face and my ID/document?</h4>
+                <p class="font-size-5 pr-md-10 pr-lg-0 mb-0">When you scan your face, more than 2,500 nodal points on your face are collected by SmilePay and converted into mathematical equation, encrypted for future use. When you scan your ID, we match your facial scan with the image and data on your ID to verify your account. We do this to provide you with enhanced data security.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Faq -->
+          <!-- Single Faq -->
+          <div class="col-lg-6 col-md-10">
+            <div class="d-flex mb-10 mb-lg-17">
+              <div class="mr-6">
+                <div class="bg-light-orange circle-28 text-white mt-1">
+                  <i class="fa fa-question"></i>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="font-size-7 mb-7">Can I add multiple cards??</h4>
+                <p class="font-size-5 pr-md-10 pr-lg-0 mb-0">Yes. And you can make one of them your default and favorite card. SmilePay will charge your default card for the payment, and if declined will prompt you to choose a different card. An automatic transaction is also possible with your prior consent.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Faq -->
+          <!-- Single Faq -->
+          <div class="col-lg-6 col-md-10">
+            <div class="d-flex mb-10 mb-lg-17">
+              <div class="mr-6">
+                <div class="bg-light-orange circle-28 text-white mt-1">
+                  <i class="fa fa-question"></i>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="font-size-7 mb-7">What if I do not have a debit card?</h4>
+                <p class="font-size-5 pr-md-10 pr-lg-0 mb-0">No worries, now you can apply for a digital card using SmilePay. It is fast and simple. Use the apply option in the app to get your debit card. Within a few minutes, your card will be ready and you can enjoy the future of payments, today.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Faq -->
+          <!-- Single Faq -->
+          <div class="col-lg-6 col-md-10">
+            <div class="d-flex mb-10 mb-lg-17">
+              <div class="mr-6">
+                <div class="bg-light-orange circle-28 text-white mt-1">
+                  <i class="fa fa-question"></i>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="font-size-7 mb-7">Can someone pay using my picture or video?</h4>
+                <p class="font-size-5 pr-md-10 pr-lg-0 mb-0">No. Our technology ensures the liveness check before any payment is triggered. We also ensure that even your twin cannot pay instead of you. We take your security and privacy very seriously!</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Faq -->
+          <!-- Single Faq -->
+          <div class="col-lg-6 col-md-10">
+            <div class="d-flex mb-10 mb-lg-17">
+              <div class="mr-6">
+                <div class="bg-light-orange circle-28 text-white mt-1">
+                  <i class="fa fa-question"></i>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="font-size-7 mb-7">What if someone looks like me?</h4>
+                <p class="font-size-5 pr-md-10 pr-lg-0 mb-0">If SmilePay is slightly hesitant and not sure that the person paying at the cashier or online may not the person who registered in the app, a PIN number will be asked for authentication and authorization.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Faq -->
+          <!-- Single Faq -->
+          <div class="col-lg-6 col-md-10">
+            <div class="d-flex mb-10 mb-lg-17">
+              <div class="mr-6">
+                <div class="bg-light-orange circle-28 text-white mt-1">
+                  <i class="fa fa-question"></i>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="font-size-7 mb-7">Is SmilePay a bank?</h4>
+                <p class="font-size-5 pr-md-10 pr-lg-0 mb-0">No. However, we work closely with MasterCard, Visa and local banks to bring you the best payment experience. You can enjoy the benefits of your favorite debit cards from your favorite bank within SmilePay.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Faq -->
+        </div>
+        <!-- Button  -->
+        <div class="text-center pt-lg-3">
+          <p class="font-size-6 mb-0">Still have a question about our service?<a class="text-blue-3 btn-link-with-underline ml-5" href="#">Contact with us</a></p>
+        </div>
+        <!-- Button End -->
+      </div>
     </div>
 
-    <section id="header">
-      <nav class="nav-main" id="navbar-main">
-        <div class="container d-flex">
-          <a class="nav-brand" href="#">SmilePay</a>
-          <div class="menu-brand navbar-no-sm">
-            <ul class="nav-list">
-              <li class="navbar-item">
-               <a class="navbar-link" href="/">Home</a>
-              </li>
-              <li class="navbar-item">
-                <a class="navbar-link" href="#">For Business</a>
-              </li>
-              <li class="navbar-item">
-                <a class="navbar-link" href="#">Features</a>
-              </li>
-              <li class="navbar-item">
-                <a class="navbar-link" href="#">About</a>
-              </li>
-              <li class="navbar-item lang">
-                <a type="button" class="navbar-link" id="lang-en">EN <i class="fas fa-caret-down"></i></a>
-                <div class="lang-menu nodisplay" id="lang-menu">
-                 <a href="#" class="lang-az">AZ</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <a id="navbarToggle" class="navbar-toggle navbar-no-lg"><i id="bars" class="fas fa-bars"></i></a>  
-      <div class="wrapper wrapper-hidden align-items-center navbar-no-lg">
-        <div class="container wrapper-div">
-          <div class="row">
-            <div class="col-12 pl-0">
-              <a href="#" class="wrapper-link">
-                <p class="wrapper-div-text">
-                  Home
-                </p>
-              </a>
-            </div>
-            <div class="col-12 pl-0">
-            <a href="#" class="wrapper-link">
-              <p class="wrapper-div-text">
-                For Business
-              </p>
-            </a> 
-            </div>
-            <div class="col-12 pl-0">
-              <a href="#" class="wrapper-link">
-                <p class="wrapper-div-text">
-                  Features
-                </p>
-              </a>  
-            </div>
-            <div class="col-12 pl-0">
-              <a href="#" class="wrapper-link">
-                <p class="wrapper-div-text">
-                  About
-                </p>
-              </a>
-            </div>
-            <div class="col-12 pl-0 text-center">
-              <a href="#" class="wrapper-link">
-                <p class="wrapper-div-text">
-                 
-                </p>
-                <img src="img/icons/azerbaijani.png" class="lang-az-small" width="30" alt="">
-              </a>
-            </div>
-          </div> 
-        </div>
-      </div>
-     </section>
 
-     <section id="landing">
+    <!-- End Testimonial Area -->
+    <!-- PromoArea Area -->
+  <!--   <div class="bg-default-6">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-6 align-self-center">
-            <h1 class="landing-header">your smile is <br>
-              now your wallet
-            </h1>
-            <p class="landing-subheader">
-              Fast, card-free payments at your<br>
-              favorite stores and online
-            </p>
-            <div class="landing-download-div d-flex align-items-center">
-              <a href="#" class="landing-download">
-                Download Now
-              </a>
-              <a href="#" class="landing-watch-video no-sm">
-                <div> 
-                  <img src="img/icons/ellipse-play.png" class="ellipse-play" alt="">
-                  <img src="img/icons/polygon.png" width="20" alt=""> View Video
+        <div class="border-bottom pt-13 pt-md-18 pt-lg-21 pb-13 pb-md-17 pb-lg-22">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-9">
+              <div class="text-center text-lg-left mb-13 mb-lg-0">
+                <h3 class="font-size-9 mb-7" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                  Download our mobile app.</h3>
+                <p class="font-size-6 mb-0 " data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">Your
+                  app is your tool for better solution with your followers, making it easier for them to keep
+                  up to date.</p>
+              </div>
+            </div>
+            <div class="col-lg-5 offset-xl-1 col-md-8 col-sm-10">
+              <div class="text-center text-lg-left px-10 px-xs-0">
+                <h5 class="font-size-6 text-oxford-blue opacity-7 font-weight-normal mb-7 ml-lg-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">Available on</h5>
+                <div class="btn-group text-center text-sm-left d-sm-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+                  <div class="w-100  mb-3 mb-lg-0 mx-auto mx-sm-3 text-center">
+                    <a href="#"><img class="min-w-210 max-h-64" src="./image/home-6/png/app-store-img.png" alt="" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" style="opacity: 1;"></a>
+                  </div>
+                  <div class="w-100 mb-3 mb-lg-0 mx-auto mx-xs-3">
+                    <a href=""><img class="min-w-210 max-h-64" src="./image/home-6/png/play-store-img.png" alt="" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500" data-aos-once="true" style="opacity: 1;"></a>
+                  </div>
                 </div>
-              </a>
-            </div>
-            <div class="landing-download-div d-flex align-items-center">
-              <a href="#" class="landing-watch-video-sm no-md">
-                <div>
-                  <img src="img/icons/polygon.png" width="20" alt=""> View Video
-                  <img src="img/icons/ellipse-play.png" class="ellipse-play-sm" alt="">
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-xl-6 order-last text-center"">
-            <div class="no-sm"> 
-              <img src="img/phones/first.png" class="front-image img-fluid front-image-first-animation" alt="">
-            </div>
-            <div class="no-md"> 
-              <img src="img/phones/first.png" class="front-image img-fluid front-image-first-animation" alt="">
+              </div>
             </div>
           </div>
         </div>
       </div>
-     </section>
+    </div> -->
 
-
-     <section id="support">
+    <section class="bg-default-6 pt-20 pb-20">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-lg-6  order-sm-last">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-10 col-md-6 box-small">
-                  <a href="#">
-                    <div class="box">
-                      <img src="img/icons/mail_chimp.png" class="mr-2" width="60" alt="">
-                          <div class="flex-column align-self-center ml-1">
-                          <div class="box-header">Mail Chimp</div>
-                          <div class="box-subheader">Email Marketing</div>
-                          </div> 
-                    </div>
-                  </a> 
-                  </a>  
-                </div>
-                <div class="col-10 col-md-6 box-small">
-                  <a href="#">
-                    <div class="box">
-                      <img src="img/icons/dialogflow.png" class="mr-2" width="60" alt="">
-                      <div class="flex-column align-self-center ml-1">
-                      <div class="box-header">Mail Chimp</div>
-                      <div class="box-subheader">Email Marketing</div>
-                      </div>    
-                    </div>
-                  </a>
-                </div>
-                <div class="col-10 col-md-6 box-small">
-                  <a href="#">
-                    <div class="box">
-                      <img src="img/icons/twitter.png" class="mr-2" width="60" alt="">
-                      <div class="flex-column align-self-center ml-1">
-                      <div class="box-header">Mail Chimp</div>
-                      <div class="box-subheader">Email Marketing</div>
-                      </div>    
-                    </div>
-                  </a>
-                </div>
-                <div class="col-10 col-md-6 box-small">
-                  <a href="#">
-                    <div class="box">
-                      <img src="img/icons/slack.png" class="mr-2" width="60" alt="">
-                      <div class="flex-column align-self-center ml-1">
-                      <div class="box-header">Mail Chimp</div>
-                      <div class="box-subheader">Email Marketing</div>
-                      </div> 
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <div class="col-12 col-lg-6">
+            <p class="download-header">Download our mobile app</p>
+            <p class="download-subheader">Your app is your tool for better solution with your followers, making it easier for them to keep up to date.</p>
           </div>
-          <div class="col-10 col-lg-6 order-first order-lg-last">
-            <h1 class="support-header">Global support in a
-              range of different languages.</h1>
-            <p class="support-subheader">
-              Lorem ipsum dolor sit amet no sea takimata sanctus est Lorem ipsum dolor sit amete. Ut enim ad minim veniam, quis nostrud exercitation ullamco sea takimata sanctus eslaboriso.
-            </p>
-          </div>
-        </div>
-
-        <div class="row justify-content-center mt-5">
-          <div class="col-10 col-lg-3 support-bottom-div">
-            <img src="img/icons/person.png" width="71" style="padding: 5px" alt="">
-            <div>
-              <p class="support-bottom-header">Creative community</p>
-              <p class="support-bottom-text">Fast, card-free payments at your favorite stores</p>
-            </div>
-          </div>
-          <div class="col-10 col-lg-3 support-bottom-div">
-            <img src="img/icons/eco-friendly.png" style="padding: 5px" width="71" alt="">
-            <div>
-              <p class="support-bottom-header">Secure</p>
-              <p class="support-bottom-text">Fast, card-free payments at your favorite stores</p>
-            </div>
-          </div>
-          <div class="col-10 col-lg-3 support-bottom-div">
-            <img src="img/icons/global-support.png" style="padding: 5px" width="71" alt="">
-            <div>
-              <p class="support-bottom-header">Global Support</p>
-              <p class="support-bottom-text">Fast, card-free payments at your favorite stores</p>
-            </div>
-          </div>
-          <div class="col-10 col-lg-3 support-bottom-div">
-            <img src="img/icons/lots-of-features.png" width="71" alt="">
-            <div>
-              <p class="support-bottom-header">Lots of features</p>
-              <p class="support-bottom-text">Fast, card-free payments at your favorite stores</p>
+          <div class="col-lg-1"></div>
+          <div class="col-12 col-lg-5 available-col">
+            <span class="mt-3 available-on">Available on</span> <br>
+            <div class="d-flex align-items-center mt-5 available-imgs">
+              <a href="#"><img class="min-w-210 max-h-64 mr-5" src="./image/home-6/png/app-store-img.png" alt="" style="opacity: 1;"></a>
+              <a href="#"><img class="min-w-210 max-h-64" src="./image/home-6/png/play-store-img.png" alt="" style="opacity: 1;"></a>
             </div>
           </div>
         </div>
       </div>
-     </section>
+    </section>
+
+    
 
 
-     <section id="phone_1">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-sm-10 col-lg-6">
-            <div id="phone1-image-div" class="no-sm phone1-image-div phone1"> 
-              <img src="img/payments/round.png" class="round"  alt="">
-              <img src="img/phones/third.png" width="300" class="thirdPhone" alt="">
-              <img src="img/payments/mc.png" class="mc" width="50%" alt="">
-              <img src="img/payments/gloria.png" class="gloria" width="50%" alt="">
-              <img src="img/payments/lacoste.png" class="lacoste" width="50%" alt="">
-            </div>
-            <div id="phone1-image-div-sm" class="no-md phone1-image-div phone1"> 
-              <img src="img/payments/round.png" class="round" width="100" alt="">
-              <img src="img/phones/third.png" width="200" class="thirdPhone" alt="">
-              <img src="img/payments/mc.png" class="mc" width="50%" alt="">
-              <img src="img/payments/gloria.png" class="gloria" width="50%" alt="">
-              <img src="img/payments/lacoste.png" class="lacoste" width="50%" alt="">
-            </div>
-          </div>
-          <div class="col-10 col-lg-6">
-            <div id="phone1-text-div" class="phone1-text-div">
-              <h1 class="support-header">Global support in a
-                range of different languages.</h1>
-              <p class="support-subheader">
-                Lorem ipsum dolor sit amet no sea takimata sanctus est Lorem ipsum dolor sit amete. Ut enim ad minim veniam, quis nostrud exercitation ullamco sea takimata sanctus eslaboriso.
-              </p>
-              <div class="support-button-div">
-                <a href="#" class="support-button">Explore Services</a>
+
+    <!-- End PromoArea Area -->
+    <!-- Footer Area -->
+    <footer>
+      <div class="bg-default-6 pt-13 pt-lg-23 pb-7 position-relative">
+        <div class="container">
+          <div class="row pb-lg-18">
+            <div class="col-lg-4 col-md-5 col-md-3 col-xs-8">
+              <div class="pr-xl-20 mb-11 mb-lg-0">
+                <div class="brand-logo mb-8">
+                  <a href="javascript:" class="nav-brand">
+                    SmilePay
+                  </a>
+                </div>
+                <p class="font-size-5 mb-0 heading-default-color pr-xs-15 pr-sm-22 pr-md-10 pr-lg-15 pr-xl-10 opacity-7">Your app is your tool for better solution with your followers, making it easier for them to keep up to date.</p>
+                <div class="mt-12">
+                  <a class="btn btn-pumpkin btn-sm rounded-5 h-60 text-white font-size-5" href="#">Download the app</a>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      
-        <div class="row justify-content-center" style="margin-top: 6rem">
-          <div class="col-10 col-lg-6 order-last order-lg-first">
-            <div id="div2-text" class="div2-text">
-              <h1 class="support-header">Global support in a
-                range of different languages.</h1>
-              <p class="support-subheader">
-                Lorem ipsum dolor sit amet no sea takimata sanctus est Lorem ipsum dolor sit amete. Ut enim ad minim veniam, quis nostrud exercitation ullamco sea takimata sanctus eslaboriso.
-              </p>
-              <div class="support-button-div">
-                <a href="#" class="support-button">Explore Services</a>
+            <div class="col-lg-8">
+              <div class="row">
+                <!-- Single Widgets -->
+                <div class="col-xl-4 col-lg-3 col-md-4 col-xs-6">
+                  <div class="mb-10 mb-lg-0">
+                    <h4 class="font-size-5 opacity-4 mb-10">Company</h4>
+                    <ul class="list-unstyled">
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">About us</a></li>
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Features</a></li>
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Pricing</a></li>
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Privacy Policy</a></li>
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Terms & Conditions</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End Single Widgets -->
+                <!-- Single Widgets -->
+                <div class="col-xl-4 col-lg-3 col-md-4 col-xs-6">
+                  <div class="mb-10 mb-lg-0">
+                    <h4 class="font-size-5 opacity-4 mb-10">Extra</h4>
+                    <ul class="list-unstyled">
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Products</a></li>
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Downloads</a></li>
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Support</a></li>
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Refund Policy</a></li>
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Sitemap</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End Single Widgets -->
+                <!-- Single Widgets -->
+                <div class="col-xl-4 col-lg-5 col-md-4 col-xs-8">
+                  <div class="mb-10 mb-lg-0">
+                    <h4 class="font-size-5 opacity-4 mb-10">Follow us on social media</h4>
+                    <ul class="footer-social-link d-flex align-items-center justify-content-between list-unstyled flex-wrap mb-10">
+                      <li><a class="text-default-color-2 gr-hover-text-blue-3" href="#">Facebook</a></li>
+                      <li><a class="text-default-color-2 gr-hover-text-blue-3" href="#">.</a></li>
+                      <li><a class="text-default-color-2 gr-hover-text-blue-3" href="#">Twitter</a></li>
+                      <li><a class="text-default-color-2 gr-hover-text-blue-3" href="#">.</a></li>
+                      <li><a class="text-default-color-2 gr-hover-text-blue-3" href="#">Instagram</a></li>
+                    </ul>
+                  </div>
+                  <div class="border-top border-default-color-4 pt-10">
+                    <div class="mb-3">
+                      <img class="w-100" src="./image/home-6/png/payment-1.png" alt="">
+                    </div>
+                    <div class="mb-3">
+                      <img class="w-100" src="./image/home-6/png/payment-2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <!-- End Single Widgets -->
               </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-10 col-lg-6 order-first order-lg-last text-center"">
-            <div id="div2-images" class="no-sm div2-images"> 
-              <img src="img/phones/fourth.png" class="phoneFourth" width="300" alt="">
-              <img src="img/phone-back/first.png" class="phone2-back1" alt="">
-              <img src="img/phone-back/second.png" class="phone2-back2" alt="">
-              <img src="img/phone-back/third.png"  class="phone2-back3" alt="">
-              <img src="img/phone-back/fourth.png" class="phone2-back4" alt="">
-            </div>
-            <div id="div2-images-sm" class="no-md div2-images"> 
-              <img src="img/phones/fourth.png" class="phoneFourth" width="200" alt="">
-              <img src="img/phone-back/first.png" class="phone2-back1" width="25%" alt="">
-              <img src="img/phone-back/second.png" class="phone2-back2" width="25%" alt="">
-              <img src="img/phone-back/third.png"  class="phone2-back3" width="22%" alt="">
-              <img src="img/phone-back/fourth.png" class="phone2-back4" width="25%" alt="">
             </div>
           </div>
         </div>
       </div>
-     </section>
+    </footer>
+    <!-- End Footer Area -->
+  </div>
+  <!-- Vendor Scripts -->
+  <script src="js/vendor.min.js"></script>
+  <!-- Plugin's Scripts -->
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="./plugins/counter-up/jquery.waypoints.min.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+</body>
 
-
-     <section id="video">
-        <div class="video-container">
-          <video src="img/video.mp4" id="bgvid" autoplay playsinline loop muted class="video"></video>
-          <div class="container align-self-center">
-            <div class="row justify-content-center">
-              <div class="col-12 align-items-center">
-                <h1 class="video-header">Take a look at our latest numbers.</h1>
-                <p class="video-subheader">Lorem ipsum dolor sit amet no sea takimata sanctus est Lorem ipsum dolor sit amete. Ut enim </p>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-10 col-lg-3">
-                <p class="video-bottom-header">Downloads in last year</p>
-                <p class="video-bottom-subheader">150K</p>
-              </div>
-              <div class="col-10 col-lg-3">
-                <p class="video-bottom-header">Downloads in last year</p>
-                <p class="video-bottom-subheader">150K</p>
-              </div>
-              <div class="col-10 col-lg-3">
-                <p class="video-bottom-header">Downloads in last year</p>
-                <p class="video-bottom-subheader">150K</p>
-              </div>
-              <div class="col-10 col-lg-3">
-                <p class="video-bottom-header">Downloads in last year</p>
-                <p class="video-bottom-subheader">150K</p>
-              </div>
-            </div>
-          </div>
-        </div>
-     </section>
-
-
-     <section id="phone_2">    
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 col-sm-10 col-lg-6">
-              <div id="phone2-image-div" class="no-sm text-center phone2"> 
-                <img src="img/phones/fifth.png" width="280" class="thirdPhone" alt="">
-                <img src="img/phone2-back/left.png" class="phone2-back-left" width="40%" alt="">
-                <img src="img/phone2-back/right.png" class="phone2-back-right" width="40%"alt="">
-              </div>
-              <div  id="phone2-image-div-sm" class="no-md text-center phone2"> 
-                <img src="img/phones/fifth.png" width="200" class="thirdPhone" alt="">
-                <img src="img/phone2-back/left.png" class="phone2-back-left" width="35%" alt="">
-                <img src="img/phone2-back/right.png" class="phone2-back-right" width="35%"alt="">
-              </div>
-            </div>
-            <div class="col-10 col-lg-6">
-              <div id="phone2-text-div" class="phone2-text-div">
-                <h1 class="support-header">Global support in a
-                  range of different languages.</h1>
-                <p class="support-subheader">
-                  Lorem ipsum dolor sit amet no sea takimata sanctus est Lorem ipsum dolor sit amete. Ut enim ad minim veniam, quis nostrud exercitation ullamco sea takimata sanctus eslaboriso.
-                </p>
-                <div class="support-button-div">
-                  <a href="#" class="support-button">Explore Services</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="row justify-content-center" style="margin-top: 6rem">
-            <div class="col-10 col-lg-6 order-last order-lg-first">
-              <div id="div3-text" class="div3-text">
-                <h1 class="support-header">Global support in a
-                  range of different languages.</h1>
-                <p class="support-subheader">
-                  Lorem ipsum dolor sit amet no sea takimata sanctus est Lorem ipsum dolor sit amete. Ut enim ad minim veniam, quis nostrud exercitation ullamco sea takimata sanctus eslaboriso.
-                </p>
-                <div class="support-button-div">
-                  <a href="#" class="support-button">Explore Services</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-10 col-lg-6 order-first order-lg-last text-center"">
-              <div id="div3-images" class="no-sm div3-images"> 
-                <img src="img/phones/sixth.png" class="phoneFourth" width="300" alt="">
-                <img src="img/icons/yelo.png" class="phone2-yelo" alt="">
-                <img src="img/icons/kapital.png" class="phone2-kapital" alt="">
-                <img src="img/icons/pasha.png" class="phone2-pasha" alt="">
-                <img src="img/icons/international.png" class="phone2-international" alt="">
-              </div>
-              <div id="div3-images-sm" class="no-md div3-images"> 
-                <img src="img/phones/sixth.png" class="phoneFourth" width="200" alt="">
-                <img src="img/icons/yelo.png" class="phone2-yelo" alt="">
-                <img src="img/icons/kapital.png" class="phone2-kapital" alt="">
-                <img src="img/icons/pasha.png" class="phone2-pasha" alt="">
-                <img src="img/icons/international.png" class="phone2-international" alt="">    
-              </div>
-            </div>
-          </div>
-        </div>
-     </section>
-
-
-     <section id="store">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h1 class="store-header">Don't wait download our app now.</h1>
-              <p class="store-subheader">Lorem ipsum dolor sit amet no sea takimata sanctus est Lorem ipsum dolor sit amete. Ut enim </p>
-              <div class="store-div">
-                <div>
-                  <a href="#">
-                    <img src="img/icons/app-store.png" alt="">
-                  </a>
-                </div>
-                <div>
-                  <a href="#">
-                    <img src="img/icons/google-play.png" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-     </section>
-
-     <section id="reviews">
-       <div class="container">
-         <div class="row justify-content-center">
-          <div class="col-10 col-lg-6">
-            <h1 class="support-header" style="text-align:center;">Loved all over the world
-              by a wide range of costumers.</h1>
-          </div>
-         </div>
-         <div class="row justify-content-center comments">
-           <div class="col-9 col-lg-4 comment-box">
-             <div>
-              <img src="img/reviews/message-rectangle.png" class="img-fluid" alt="">
-              <div class="comment-bottom">
-                <img src="img/reviews/first.png" alt="">
-                <div class="comment-text">
-                  <span class="title">Name Surname</span> <br>
-                  <span class="company">Person</span>
-                </div>
-              </div>
-            </div>
-           </div>
-           <div class="col-9 col-lg-4 comment-box">
-            <div>
-             <img src="img/reviews/message-rectangle.png" class="img-fluid" alt="">
-             <div class="comment-bottom">
-               <img src="img/reviews/first.png" alt="">
-               <div class="comment-text">
-                 <span class="title">Name Surname</span> <br>
-                 <span class="company">Person</span>
-               </div>
-             </div>
-           </div>
-          </div>
-          <div class="col-9 col-lg-4 comment-box">
-            <div>
-             <img src="img/reviews/message-rectangle.png" class="img-fluid" alt="">
-             <div class="comment-bottom">
-               <img src="img/reviews/first.png" alt="">
-               <div class="comment-text">
-                 <span class="title">Name Surname</span> <br>
-                 <span class="company">Person</span>
-               </div>
-             </div>
-           </div>
-          </div>
-       </div>
-     </section>
-
-     <section id="faq">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-10">
-            <p class="faq-title">Frequently Asked Questions</p>
-          </div>
-        </div>
-        <div class="row questions-row">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-lg-6">             
-                <div class="col-12 question-col">
-                  <a>
-                    <div id="q1-box" class="question-box closed">
-                      <img id="q1-image-close" src="img/icons/question-closed.png" alt="">
-                      <img id="q1-image-open" class="q-close" src="img/icons/question-opened.png" alt="">
-                      <span class="question-text">In what countries is the app available?</span>
-                    </div>
-                  </a>
-                  <div id="q1" class="question-opened q-close">
-                    <p>Lorem ipsum dolor sit amet no sea takimata sanctus est Lorem ipsum dolor sit amete. Ut enim </p>
-                  </div>
-                </div>
-                <div class="col-12 question-col">
-                  <a>
-                    <div id="q2-box" class="question-box closed">
-                      <img id="q2-image-close" src="img/icons/question-closed.png" alt="">
-                      <img id="q2-image-open" class="q-close" src="img/icons/question-opened.png" alt="">
-                      <span class="question-text">In what countries is the app available?</span>
-                    </div>
-                  </a>
-                  <div id="q2" class="question-opened q-close">
-                    <p>Lorem ipsum dolor sit amet no sea takimata sanctus est Lorem ipsum dolor sit amete. Ut enim </p>
-                  </div>
-                </div>
-                <div class="col-12 question-col">
-                  <a>
-                    <div id="q3-box" class="question-box closed">
-                      <img id="q3-image-close" src="img/icons/question-closed.png" alt="">
-                      <img id="q3-image-open" class="q-close" src="img/icons/question-opened.png" alt="">
-                      <span class="question-text">In what countries is the app available?</span>
-                    </div>
-                  </a>
-                  <div id="q3" class="question-opened q-close">
-                    <p>Lorem ipsum dolor sit amet no sea takimata sanctus est Lorem ipsum dolor sit amete. Ut enim </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-6">
-                <div class="col-12 question-col">
-                  <a>
-                    <div id="q4-box" class="question-box closed">
-                      <img id="q4-image-close" src="img/icons/question-closed.png" alt="">
-                      <img id="q4-image-open" class="q-close" src="img/icons/question-opened.png" alt="">
-                      <span class="question-text">In what countries is the app available?</span>
-                    </div>
-                  </a>
-                  <div id="q4" class="question-opened q-close">
-                    <p>Lorem ipsum dolor sit amet no sea takimata sanctus est Lorem ipsum dolor sit amete. Ut enim </p>
-                  </div>
-                </div>
-                <div class="col-12 question-col">
-                  <a>
-                    <div id="q5-box" class="question-box closed">
-                      <img id="q5-image-close" src="img/icons/question-closed.png" alt="">
-                      <img id="q5-image-open" class="q-close" src="img/icons/question-opened.png" alt="">
-                      <span class="question-text">In what countries is the app available?</span>
-                    </div>
-                  </a>
-                  <div id="q5" class="question-opened q-close">
-                    <p>Lorem ipsum dolor sit amet no sea takimata sanctus est Lorem ipsum dolor sit amete. Ut enim </p>
-                  </div>
-                </div>
-                <div class="col-12 question-col">
-                  <a>
-                    <div id="q6-box" class="question-box closed">
-                      <img id="q6-image-close" src="img/icons/question-closed.png" alt="">
-                      <img id="q6-image-open" class="q-close" src="img/icons/question-opened.png" alt="">
-                      <span class="question-text">In what countries is the app available?</span>
-                    </div>
-                  </a>
-                  <div id="q6" class="question-opened q-close">
-                    <p>Lorem ipsum dolor sit amet no sea takimata sanctus est Lorem ipsum dolor sit amete. Ut enim </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-     </section>
-
-     <section id="user-interface">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-10">
-              <p class="faq-title">User interface for the user experience.</p>
-              <p class="faq-subtitle">Lorem ipsum dolor sit amet no sea takimata sanctus est Lorem ipsum dolor sit amete. Ut enim </p>
-            </div>
-          </div>
-          <div class="row justify-content-center" style="margin-top:4rem">
-            <div class="col-10">
-              <div class="owl-carousel owl-theme">
-                <div class="item">
-                  <div class="container">
-                    <div class="row justify-content-center">
-                      <div class="col-10 text-center">
-                        <img src="img/screenshots/p-1.png" width="150" alt="">
-                      </div>
-                    </div>
-                  </div>   
-                </div>
-                <div class="item">
-                  <div class="container">
-                    <div class="row justify-content-center">
-                      <div class="col-10 text-center">
-                        <img src="img/screenshots/p-2.png" width="150" alt="">
-                      </div>
-                    </div>
-                  </div>  
-                </div>
-                <div class="item">
-                  <div class="container">
-                    <div class="row justify-content-center">
-                      <div class="col-10 text-center">
-                        <img src="img/screenshots/p-3.png" width="150" alt="">
-                      </div>
-                    </div>
-                  </div> 
-                </div>
-                <div class="item">
-                  <div class="container">
-                    <div class="row justify-content-center">
-                      <div class="col-10 text-center">
-                        <img src="img/screenshots/p-4.png" width="150" alt="">
-                      </div>
-                    </div>
-                  </div> 
-                </div>
-                <div class="item">
-                  <div class="container">
-                    <div class="row justify-content-center">
-                      <div class="col-10 text-center">
-                        <img src="img/screenshots/p-5.png" width="150" alt="">
-                      </div>
-                    </div>
-                  </div> 
-                </div>
-                <div class="item">
-                  <div class="container">
-                    <div class="row justify-content-center">
-                      <div class="col-10 text-center">
-                        <img src="img/screenshots/p-6.png" width="150" alt="">
-                      </div>
-                    </div>
-                  </div> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-     </section>
-
-
-
-     <section id="footer">
-       <footer>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-8 col-lg-4">
-              <h1 class="footer-header">Company</h1>
-              <div class="footer-subheader">
-                <a href="#"><p>About SmilePay</p></a>
-                <a href="#"><p>Jobs</p></a>
-                <a href="#"><p>Terms of use</p></a>
-                <a href="#"><p>Privacy policy</p></a>
-                <a href="#"><p>Affiliates</p></a>
-                <a href="#"><p>Contact us</p></a>
-              </div>
-            </div>
-            <div class="col-8 col-lg-4">
-              <h1 class="footer-header">Support</h1>
-              <div class="footer-subheader">
-                <a href="#"><p>Support career</p></a>
-                <a href="#"><p>Privacy policy</p></a>
-              </div>
-            </div>
-            <div class="col-8 col-lg-4">
-              <h1 class="footer-header">Legal</h1>
-              <div class="footer-subheader">
-                <a href="#"><p>Terms of use</p></a>
-                <a href="#"><p>Terms of subscription</p></a>
-                <a href="#"><p>Privacy policy</p></a>
-                <a href="#"><p>Report a violation</p></a>
-              </div>
-            </div>
-          </div>
-        </div>
-       </footer>
-     </section>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
 </html>
