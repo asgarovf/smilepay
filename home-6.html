@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SmilePay</title>
+  <meta name="description" content="Facial recognition payment for everyday shopping.">
+  <meta name="keywords" content="Payment, Facial Recognition, Easy Payment, Banking, Mobile Banking">
+  <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="./fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Custom stylesheet -->
+</head>
+
+<body data-theme="light">
+  <div class="site-wrapper overflow-hidden ">
+    <div id="loading">
+      <img src="./image/preloader.gif" alt="">
+    </div>
+    <!-- Header Area -->
+    <!-- Header Area -->
+    <header class="site-header site-header--menu-right px-7 px-lg-10 z-index-99 dynamic-sticky-bg site-header--absolute site-header--sticky">
+      <div class="container-fluid">
+        <nav class="navbar site-navbar offcanvas-active navbar-expand-lg  px-0">
+          <!-- Brand Logo-->
+          <div class="brand-logo mt-3 mt-md-0"><a class="nav-brand" href="#">
+              <!-- light version logo (logo must be black)-->
+              <!-- <img src="image/logo-main-black.png" alt="" class="light-version-logo"> -->
+              <!-- Dark version logo (logo must be White)-->
+             <!--  <img src="image/logo-main-white.png" alt="" class="dark-version-logo"> -->
+             SmilePay
+            </a></div>
+          <div class="collapse navbar-collapse" id="mobile-menu">
+            <div class="navbar-nav-wrapper">
+              <ul class="navbar-nav main-menu">
+                <li class="nav-item">
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" href="#features" role="button" >Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" href="#features" role="button">For businesses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" href="#features" role="button">How it works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" href="#features" role="button">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" href="#features" role="button">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle gr-toggle-arrow" id="navbarDropdown" href="#features" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN <i class="icon icon-small-down"></i></a>
+                  <ul class="gr-menu-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="drop-menu-item">
+                      <a href="#">
+                        AZ
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+            </div>
+            <button class="d-block d-lg-none offcanvas-btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+              <i class="gr-cross-icon"></i>
+            </button>
+          </div>
+          <div class="header-btn ml-auto ml-lg-6 d-none d-sm-block">
+            <a class="btn btn btn-pumpkin btn-sm-2 rounded-5 h-50 font-size-5 font-weight-bold p-5" href="#">
+              Download the app
+            </a>
+          </div>
+          <!-- Mobile Menu Hamburger-->
+          <button class="navbar-toggler btn-close-off-canvas  hamburger-icon border-0" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <i class="icon icon-simple-remove icon-close"></i> -->
+            <span class="hamburger hamburger--squeeze js-hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+            </span>
+          </button>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+    <!-- navbar- -->
+    <!-- End Header Area -->
+    <!-- heroSix Area -->
+    <div class="position-relative pt-25 pt-md-31 pt-lg-35 pb-15 pb-md-19 pb-lg-33 position-relative overflow-hidden">
+      <div class="container position-static">
+        <div class="row align-items-center justify-content-center position-static">
+          <!-- Hero Image -->
+          <div class="col-xl-6 col-lg-6 col-md-9 col-xs-8 position-static">
+            <div class="l6-hero-image-group">
+              <img class="w-100" src="./image/home-6/png/hero-mobile.png" alt="" data-aos="fade-up" data-aos-once="true">
+              <div class="img-1">
+                <img class="w-100" src="./image/home-6/png/cirle-yellow-shape.png" alt="" data-aos="fade-right" data-aos-delay="300" data-aos-once="true">
+              </div>
+            </div>
+          </div>
+          <!-- End Hero Image -->
+          <!-- Hero Content -->
+          <div class="col-lg-6 col-md-9 col-sm-11">
+            <div class="mt-8 mt-lg-0 pr-md-11 pr-lg-0 pr-xl-10" data-aos="fade-left" data-aos-delay="500" data-aos-once="true">
+              <h1 class="font-size-13 mb-8 pr-xs-31 pr-sm-21 pr-md-10 pr-lg-0 line-height-84">Pay with Your Smile.</h1>
+              <p class="font-size-7 mb-0 pr-sm-10 pr-md-10 pr-lg-0 pr-xl-18">Facial recognition payment
+                for everyday shopping.</p>
+              <div class="mt-10">
+                <a class="btn btn-dark-green btn-3 rounded-5" href="#">Download the app</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Hero Content -->
+        </div>
+      </div>
+      <div class="absolute-bottom-right mb-13 mb-md-17 mb-lg-26 d-none d-sm-block mr-n25 mr-md-n15 mr-lg-n7" data-aos="fade-left" data-aos-delay="500" data-aos-once="true">
+        <img class="w-50 w-md-75 w-lg-100" src="./image/home-6/png/hero-shape.png" alt="">
+      </div>
+    </div>
+    <!-- End heroSix Area -->
+    <!-- videoLink Area -->
+    <div class="bg-purple-heart py-10">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="text-center" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+              <a class="video-btn text-white font-size-6 mb-0" href="https://www.youtube.com/watch?v=LWZ7iytIA6k">
+                <span class="text-golden-yellow mr-3">
+                                <i
+                                class="fa fa-play-circle"></i>
+                            </span> Finity takes only 5 mins to setup your mobile app
+                from
+                website.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End videoLink Area -->
+    <!-- featureSection Area -->
+    <div class="pt-14 pt-md-18 pt-lg-26 pb-14 pb-md-18 pb-lg-26 bg-default-6">
+      <div class="container">
+        <div class="row justify-content-center justify-content-lg-start">
+          <div class="col-xl-6 col-lg-7 col-md-8">
+            <div class="mb-0 px-xs-15 px-md-0 mb-10 text-center text-lg-left" data-aos="fade-up" data-aos-delay="400" data-aos-once="true">
+              <h2 class="font-size-11">For everyday, just Speak-to-Chat.</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xl-6 col-lg-7 col-md-8 order-2 order-lg-1">
+            <div class="">
+              <!-- Services -->
+              <div class="row justify-content-center">
+                <div class="col-sm-6 col-xs-7">
+                  <div class="pt-13 pt-lg-15 pr-sm-0 pr-xs-10" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                    <div class="square-60 bg-blue-3 shadow-dodger-blue-3 rounded-10 text-white font-size-7">
+                      <i class="fa fa-link"></i>
+                    </div>
+                    <div class="mt-12 pr-lg-10 pr-md-0 pr-xs-8">
+                      <h4 class="font-size-7 mb-5">Cashless, Cardless Payments</h4>
+                      <!-- <p class="font-size-5 mb-0">Typewolf is an independent text resource created Finity. -->
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-7">
+                  <div class="pt-13 pt-lg-15 pr-sm-0 pr-xs-10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
+                    <div class="square-60 bg-sunset shadow-sunset rounded-10 text-white font-size-7">
+                      <i class="fa fa-level-up-alt"></i>
+                    </div>
+                    <div class="mt-12 pr-lg-10 pr-md-0 pr-xs-8">
+                      <h4 class="font-size-7 mb-5">All in One. Anytime. Anywhere.</h4>
+                      <!-- <p class="font-size-5 mb-0">Typewolf is an independent text resource created Finity. -->
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-7">
+                  <div class="pt-13 pt-lg-15 pr-sm-0 pr-xs-10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600" data-aos-once="true">
+                    <div class="square-60 bg-light-green shadow-light-green rounded-10 text-white font-size-7">
+                      <i class="fa fa-hourglass-half"></i>
+                    </div>
+                    <div class="mt-12 pr-lg-10 pr-md-0 pr-xs-8">
+                      <h4 class="font-size-7 mb-5">Faster Payments, More Time to Enjoy Life</h4>
+                      <!-- <p class="font-size-5 mb-0">Typewolf is an independent text resource created Finity. -->
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-7">
+                  <div class="pt-13 pt-lg-15 pr-sm-0 pr-xs-10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="900" data-aos-once="true">
+                    <div class="square-60 bg-dodger-blue-1 shadow-dodger-blue-1 rounded-10 text-white font-size-7">
+                      <i class="fa fa-link"></i>
+                    </div>
+                    <div class="mt-12 pr-lg-10 pr-md-0 pr-xs-8">
+                      <h4 class="font-size-7 mb-5">Much safer, more secure!</h4>
+                    <!--   <p class="font-size-5 mb-0">Typewolf is an independent text resource created Finity. -->
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Services -->
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-5 col-md-8 order-1 order-lg-2">
+            <div class="mt-lg-16 mr-lg-n20 mr-xl-n25" data-aos="fade-left" data-aos-delay="500" data-aos-once="true">
+              <img class="w-100" src="./image/home-6/png/feature-right-img.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End featureSection Area -->
+    <!-- contentOne Area -->
+    <div class="pt-23 pt-md-25 pt-lg-35 pb-9 pb-md-14 pb-lg-33 overflow-hidden position-relative">
+      <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-lg-start">
+          <!-- Image Section -->
+          <div class="col-xl-5 col-xs-4">
+            <div class="l6-content-image-group">
+              <div class="img-1">
+                <img class="w-100" src="./image/home-6/png/green-dot-pattern.png" alt="" data-aos="fade-down" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
+              </div>
+              <div class="img-2">
+                <img class="w-100" src="./image/home-6/png/content-1-mobile.png" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+              </div>
+            </div>
+          </div>
+          <!-- Content Section -->
+          <div class="col-lg-6 col-md-8 col-xs-10 ml-lg-10 ml-xl-10">
+            <div class="pt-7 pb-7 pb-lg-17 pl-sm-5 pl-md-9 pl-lg-10">
+              <h2 class="font-size-11 mb-9" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">Faster Payments, <br class="d-none d-xs-block"> Better Control over Finances.</h2>
+              <p class="font-size-7 mb-0 pr-xl-13" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">SmilePay is a super intuitive money management app designed to help you see your bank balance,
+                 track your spending, and analyze your habits.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End contentOne Area -->
+    <!-- contentTwo Area -->
+    <div class="bg-default-6 pt-14 pt-md-19 pt-lg-34 pb-9 pb-md-14 pb-lg-34 overflow-hidden position-relative">
+      <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-lg-start">
+          <!-- Content Section -->
+          <div class="col-xl-5 col-lg-6 col-md-8 col-xs-10 order-2 order-md-1">
+            <div class="pt-7 pb-7 pr-sm-5 pr-md-9 pr-lg-0">
+              <h2 class="font-size-11 mb-9 pr-sm-18 pr-md-10 pr-lg-5 pr-xl-5" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">Enjoy the discounts and rewards.</h2>
+              <p class="font-size-7 mb-0" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">You can see nearby personalized cash-back, discount and rewards
+                 offers using the SmilePay app. Get the most and the best out of your shopping experience with personalized offers
+                  from your favorite stores. .</p>
+            </div>
+          </div>
+          <!-- Content Image Section -->
+          <div class="col-xl-6 offset-xl-1 col-lg-6 col-xs-4 order-1 order-md-2">
+            <div class="l6-content-image-group-2 ml-lg-18">
+              <div class="img-1">
+                <img class="w-100" src="./image/home-6/png/yellow-small-shape.png" alt="" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
+              </div>
+              <div class="img-2">
+                <img class="w-100" src="./image/home-6/png/content-2-mobile.png" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End contentTwo Area -->
+    <!-- contentTwo Area -->
+    <div class="pt-23 pt-md-25 pt-lg-33 pb-11 pb-md-14 pb-lg-33 overflow-hidden position-relative">
+      <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-lg-start">
+          <div class=" col-lg-5 col-md-4 col-xs-5">
+            <div class="l6-content-image-group-3 mr-md-0 mr-lg-15 mr-xl-12">
+              <div class="img-1">
+                <img class="w-100" src="./image/home-6/png/green-shape.png" alt="" data-aos="fade-down" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
+              </div>
+              <div class="img-2">
+                <img class="w-100" src="./image/home-6/png/content-3-mobile.png" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-8 col-xs-10 ml-xl-19">
+            <div class="pt-5 pb-7 pr-sm-5 pr-md-0 ml-md-10 ml-xl-0">
+              <h2 class="font-size-11 mb-9 pr-xs-10 pr-md-0" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">You are safe. Your data is safe.</h2>
+              <p class="font-size-7 mb-0 pr-lg-0 pr-xl-22" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">We can’t stress it enough: your privacy,
+                 your safety and security are our utmost priority. This is why we are making sure to apply all security measures provided by the GDPR,
+                  MasterCard, Visa, American Express, central banks, and your local bank so that you can safely enjoy SmilePay.</p>
+              <div class="mt-13" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                <a class="btn btn-dark-green btn-3 rounded-5" href="#">Download the app</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End contentTwo Area -->
+    <!-- screenShot Area -->
+    <div class="bg-purple-heart pt-14 pb-15 pt-md-17 pb-md-19 pt-lg-25 pb-lg-26">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <div class="text-center dark-mode-texts mb-8 mb-lg-18">
+              <h2 class="font-size-11">Inside our app</h2>
+              <p class="font-size-7 mb-0 opacity-7">Sophisticated styling with exceptional comfort. Super-soft, pressure-relieving earpads in foamed urethane.</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Section Title -->
+      </div>
+      <!-- Screenshot Area -->
+      <div class="screenshot-slider-wrapper mb-5">
+        <div class="screenshot-slider">
+          <!-- single-slide Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/home-6/png/screenshot-1.png" alt="" />
+            </div>
+          </div>
+          <!-- / .single-slide Area -->
+          <!-- single-slide Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/home-6/png/screenshot-2.png" alt="" />
+            </div>
+          </div>
+          <!-- / .single-slide Area -->
+          <!-- single-slide Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/home-6/png/screenshot-3.png" alt="" />
+            </div>
+          </div>
+          <!-- / .single-slide Area -->
+          <!-- single-slide Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/home-6/png/screenshot-4.png" alt="" />
+            </div>
+          </div>
+          <!-- / .single-slide Area -->
+          <!-- single-slide Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/home-6/png/screenshot-5.png" alt="" />
+            </div>
+          </div>
+          <!-- / .single-slide Area -->
+          <!-- Screenshot Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/home-6/png/screenshot-6.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- / .Screenshot Area -->
+        <div class="phone-bg-img">
+          <img src="./image/home-6/png/mobile-frame.png" alt="" />
+        </div>
+      </div>
+      <div class="screenshots-dots pt-5 pt-md-10"></div>
+      <!-- / .Screenshot Area -->
+    </div>
+    <!-- End screenShot Area -->
+    <!-- Testimonial Area -->
+    <div class="pt-14 pt-md-18 pt-lg-24 pb-15 pb-md-19 pb-lg-28 position-relative">
+      <div class="l6-shape-2 absolute-top-right mt-28 mr-n15">
+        <img src="./image/home-6/png/l6-cutomer-review-shape.png" alt="">
+      </div>
+      <div class="container">
+        <!-- Section Title -->
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <div class="text-center mb-13 mb-lg-21">
+              <h2 class="font-size-11 mb-7">Customers loving it</h2>
+              <p class="font-size-7 mb-0 px-xl-10">Your app is your tool for better solution with your
+                followers, making it easier for them to keep up to date.</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Section Title -->
+        <div class="row">
+          <div class="col-12">
+            <div class="l6-testimonial">
+              <!-- Single Testimonial -->
+              <div class="single-testimoial bg-white border border-default-color-5 rounded-10 pt-7 pb-7 pt-sm-11 pt-md-11 pb-sm-10 pb-md-10 pl-7 pl-sm-11 pl-md-11 pr-7 pr-md-12 mx-md-6 focus-reset">
+                <div class="mb-10">
+                  <img src="./image/home-6/png/l6-review-star.png" alt="">
+                </div>
+                <p class="font-size-8 mb-13 pr-sm-5 pr-md-0 pr-xl-4 text-dark-cloud">Your app is your tool for better solution with your followers, making it easier for them to keep up to date.</p>
+                <div class="d-flex align-items-center">
+                  <div class="mr-6">
+                    <img src="./image/home-6/png/user-img-1.png" alt="">
+                  </div>
+                  <div class="info">
+                    <h5 class="font-size-7 text-dark-cloud mb-0">Alena Herwitz</h5>
+                    <p class="font-size-5 text-stone mb-0">www.magsite.com</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Testimonial -->
+              <!-- Single Testimonial -->
+              <div class="single-testimoial bg-white border border-default-color-5 rounded-10 pt-7 pb-7 pt-sm-11 pt-md-11 pb-sm-10 pb-md-10 pl-7 pl-sm-11 pl-md-11 pr-7 pr-md-12 mx-md-6 focus-reset">
+                <div class="mb-10">
+                  <img src="./image/home-6/png/l6-review-star.png" alt="">
+                </div>
+                <p class="font-size-8 mb-13 pr-sm-5 pr-md-0 pr-xl-4 text-dark-cloud">Your app is your tool for better solution with your followers, making it easier for them to keep up to date.</p>
+                <div class="d-flex align-items-center">
+                  <div class="mr-6">
+                    <img src="./image/home-6/png/user-img-2.png" alt="">
+                  </div>
+                  <div class="info">
+                    <h5 class="font-size-7 text-dark-cloud mb-0">Maren Westervelt</h5>
+                    <p class="font-size-5 text-stone mb-0">www.itsmaren.net</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Testimonial -->
+              <!-- Single Testimonial -->
+              <div class="single-testimoial bg-white border border-default-color-5 rounded-10 pt-7 pb-7 pt-sm-11 pt-md-11 pb-sm-10 pb-md-10 pl-7 pl-sm-11 pl-md-11 pr-7 pr-md-12 mx-md-6 focus-reset">
+                <div class="mb-10">
+                  <img src="./image/home-6/png/l6-review-star.png" alt="">
+                </div>
+                <p class="font-size-8 mb-13 pr-sm-5 pr-md-0 pr-xl-4 text-dark-cloud">Your app is your tool for better solution with your followers, making it easier for them to keep up to date.</p>
+                <div class="d-flex align-items-center">
+                  <div class="mr-6">
+                    <img src="./image/home-6/png/user-img-1.png" alt="">
+                  </div>
+                  <div class="info">
+                    <h5 class="font-size-7 text-dark-cloud mb-0">Maren Westervelt</h5>
+                    <p class="font-size-5 text-stone mb-0">www.itsmaren.net</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Testimonial -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="pt-10 pt-md-10 pt-lg-10 pb-13 pb-md-18 pb-lg-23">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-9">
+            <div class="text-center mb-13 mb-lg-18">
+              <h2 class="font-size-11 mb-7">Frequently Asked Question</h2>
+              <p class="font-size-7 mb-0 px-md-10 px-xl-13">Our focus is always on finding the best people to work with. Our
+                bar is high, but you look ready to take on the challenge.</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Section Title -->
+        <!-- Faqs -->
+        <!-- Faqs -->
+        <div class="row justify-content-center">
+          <!-- Single Faq -->
+          <div class="col-lg-6 col-md-10">
+            <div class="d-flex mb-10 mb-lg-17">
+              <div class="mr-6">
+                <div class="bg-light-orange circle-28 text-white mt-1">
+                  <i class="fa fa-question"></i>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="font-size-7 mb-7">What is SmilePay?</h4>
+                <p class="font-size-5 pr-md-10 pr-lg-0 mb-0">SmilePay is a facial recognition payment solution for everyday shopping at retail and online.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Faq -->
+          <!-- Single Faq -->
+          <div class="col-lg-6 col-md-10">
+            <div class="d-flex mb-10 mb-lg-17">
+              <div class="mr-6">
+                <div class="bg-light-orange circle-28 text-white mt-1">
+                  <i class="fa fa-question"></i>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="font-size-7 mb-7">How do I use SmilePay?</h4>
+                <p class="font-size-5 pr-md-10 pr-lg-0 mb-0">Download the app and register with your Apple ID, Google account or your email. Add your bank card, scan your face and your national ID or driver’s license, and you are good to go. At stores mention to pay with SmilePay. For online shopping, just click on the SmilePay logo for faster checkout and payment.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Faq -->
+          <!-- Single Faq -->
+          <div class="col-lg-6 col-md-10">
+            <div class="d-flex mb-10 mb-lg-17">
+              <div class="mr-6">
+                <div class="bg-light-orange circle-28 text-white mt-1">
+                  <i class="fa fa-question"></i>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="font-size-7 mb-7">Why do I scan my face and my ID/document?</h4>
+                <p class="font-size-5 pr-md-10 pr-lg-0 mb-0">When you scan your face, more than 2,500 nodal points on your face are collected by SmilePay and converted into mathematical equation, encrypted for future use. When you scan your ID, we match your facial scan with the image and data on your ID to verify your account. We do this to provide you with enhanced data security.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Faq -->
+          <!-- Single Faq -->
+          <div class="col-lg-6 col-md-10">
+            <div class="d-flex mb-10 mb-lg-17">
+              <div class="mr-6">
+                <div class="bg-light-orange circle-28 text-white mt-1">
+                  <i class="fa fa-question"></i>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="font-size-7 mb-7">Can I add multiple cards??</h4>
+                <p class="font-size-5 pr-md-10 pr-lg-0 mb-0">Yes. And you can make one of them your default and favorite card. SmilePay will charge your default card for the payment, and if declined will prompt you to choose a different card. An automatic transaction is also possible with your prior consent.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Faq -->
+          <!-- Single Faq -->
+          <div class="col-lg-6 col-md-10">
+            <div class="d-flex mb-10 mb-lg-17">
+              <div class="mr-6">
+                <div class="bg-light-orange circle-28 text-white mt-1">
+                  <i class="fa fa-question"></i>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="font-size-7 mb-7">What if I do not have a debit card?</h4>
+                <p class="font-size-5 pr-md-10 pr-lg-0 mb-0">No worries, now you can apply for a digital card using SmilePay. It is fast and simple. Use the apply option in the app to get your debit card. Within a few minutes, your card will be ready and you can enjoy the future of payments, today.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Faq -->
+          <!-- Single Faq -->
+          <div class="col-lg-6 col-md-10">
+            <div class="d-flex mb-10 mb-lg-17">
+              <div class="mr-6">
+                <div class="bg-light-orange circle-28 text-white mt-1">
+                  <i class="fa fa-question"></i>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="font-size-7 mb-7">Can someone pay using my picture or video?</h4>
+                <p class="font-size-5 pr-md-10 pr-lg-0 mb-0">No. Our technology ensures the liveness check before any payment is triggered. We also ensure that even your twin cannot pay instead of you. We take your security and privacy very seriously!</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Faq -->
+          <!-- Single Faq -->
+          <div class="col-lg-6 col-md-10">
+            <div class="d-flex mb-10 mb-lg-17">
+              <div class="mr-6">
+                <div class="bg-light-orange circle-28 text-white mt-1">
+                  <i class="fa fa-question"></i>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="font-size-7 mb-7">What if someone looks like me?</h4>
+                <p class="font-size-5 pr-md-10 pr-lg-0 mb-0">If SmilePay is slightly hesitant and not sure that the person paying at the cashier or online may not the person who registered in the app, a PIN number will be asked for authentication and authorization.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Faq -->
+          <!-- Single Faq -->
+          <div class="col-lg-6 col-md-10">
+            <div class="d-flex mb-10 mb-lg-17">
+              <div class="mr-6">
+                <div class="bg-light-orange circle-28 text-white mt-1">
+                  <i class="fa fa-question"></i>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="font-size-7 mb-7">Is SmilePay a bank?</h4>
+                <p class="font-size-5 pr-md-10 pr-lg-0 mb-0">No. However, we work closely with MasterCard, Visa and local banks to bring you the best payment experience. You can enjoy the benefits of your favorite debit cards from your favorite bank within SmilePay.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Faq -->
+        </div>
+        <!-- Button  -->
+        <div class="text-center pt-lg-3">
+          <p class="font-size-6 mb-0">Still have a question about our service?<a class="text-blue-3 btn-link-with-underline ml-5" href="#">Contact with us</a></p>
+        </div>
+        <!-- Button End -->
+      </div>
+    </div>
+
+
+    <!-- End Testimonial Area -->
+    <!-- PromoArea Area -->
+  <!--   <div class="bg-default-6">
+      <div class="container">
+        <div class="border-bottom pt-13 pt-md-18 pt-lg-21 pb-13 pb-md-17 pb-lg-22">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-9">
+              <div class="text-center text-lg-left mb-13 mb-lg-0">
+                <h3 class="font-size-9 mb-7" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                  Download our mobile app.</h3>
+                <p class="font-size-6 mb-0 " data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">Your
+                  app is your tool for better solution with your followers, making it easier for them to keep
+                  up to date.</p>
+              </div>
+            </div>
+            <div class="col-lg-5 offset-xl-1 col-md-8 col-sm-10">
+              <div class="text-center text-lg-left px-10 px-xs-0">
+                <h5 class="font-size-6 text-oxford-blue opacity-7 font-weight-normal mb-7 ml-lg-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">Available on</h5>
+                <div class="btn-group text-center text-sm-left d-sm-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+                  <div class="w-100  mb-3 mb-lg-0 mx-auto mx-sm-3 text-center">
+                    <a href="#"><img class="min-w-210 max-h-64" src="./image/home-6/png/app-store-img.png" alt="" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" style="opacity: 1;"></a>
+                  </div>
+                  <div class="w-100 mb-3 mb-lg-0 mx-auto mx-xs-3">
+                    <a href=""><img class="min-w-210 max-h-64" src="./image/home-6/png/play-store-img.png" alt="" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500" data-aos-once="true" style="opacity: 1;"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <section class="bg-default-6 pt-20 pb-20">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6">
+            <p class="download-header">Download our mobile app</p>
+            <p class="download-subheader">Your app is your tool for better solution with your followers, making it easier for them to keep up to date.</p>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-12 col-lg-5 available-col">
+            <span class="mt-3 available-on">Available on</span> <br>
+            <div class="d-flex align-items-center mt-5 available-imgs">
+              <a href="#"><img class="min-w-210 max-h-64 mr-5" src="./image/home-6/png/app-store-img.png" alt="" style="opacity: 1;"></a>
+              <a href="#"><img class="min-w-210 max-h-64" src="./image/home-6/png/play-store-img.png" alt="" style="opacity: 1;"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+
+
+    <!-- End PromoArea Area -->
+    <!-- Footer Area -->
+    <footer>
+      <div class="bg-default-6 pt-13 pt-lg-23 pb-7 position-relative">
+        <div class="container">
+          <div class="row pb-lg-18">
+            <div class="col-lg-4 col-md-5 col-md-3 col-xs-8">
+              <div class="pr-xl-20 mb-11 mb-lg-0">
+                <div class="brand-logo mb-8">
+                  <a href="javascript:" class="nav-brand">
+                    SmilePay
+                  </a>
+                </div>
+                <p class="font-size-5 mb-0 heading-default-color pr-xs-15 pr-sm-22 pr-md-10 pr-lg-15 pr-xl-10 opacity-7">Your app is your tool for better solution with your followers, making it easier for them to keep up to date.</p>
+                <div class="mt-12">
+                  <a class="btn btn-pumpkin btn-sm rounded-5 h-60 text-white font-size-5" href="#">Download the app</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="row">
+                <!-- Single Widgets -->
+                <div class="col-xl-4 col-lg-3 col-md-4 col-xs-6">
+                  <div class="mb-10 mb-lg-0">
+                    <h4 class="font-size-5 opacity-4 mb-10">Company</h4>
+                    <ul class="list-unstyled">
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">About us</a></li>
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Features</a></li>
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Pricing</a></li>
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Privacy Policy</a></li>
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Terms & Conditions</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End Single Widgets -->
+                <!-- Single Widgets -->
+                <div class="col-xl-4 col-lg-3 col-md-4 col-xs-6">
+                  <div class="mb-10 mb-lg-0">
+                    <h4 class="font-size-5 opacity-4 mb-10">Extra</h4>
+                    <ul class="list-unstyled">
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Products</a></li>
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Downloads</a></li>
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Support</a></li>
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Refund Policy</a></li>
+                      <li class="mb-7"><a class="font-size-5 text-default-color-2 gr-hover-text-blue-3" href="#">Sitemap</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End Single Widgets -->
+                <!-- Single Widgets -->
+                <div class="col-xl-4 col-lg-5 col-md-4 col-xs-8">
+                  <div class="mb-10 mb-lg-0">
+                    <h4 class="font-size-5 opacity-4 mb-10">Follow us on social media</h4>
+                    <ul class="footer-social-link d-flex align-items-center justify-content-between list-unstyled flex-wrap mb-10">
+                      <li><a class="text-default-color-2 gr-hover-text-blue-3" href="#">Facebook</a></li>
+                      <li><a class="text-default-color-2 gr-hover-text-blue-3" href="#">.</a></li>
+                      <li><a class="text-default-color-2 gr-hover-text-blue-3" href="#">Twitter</a></li>
+                      <li><a class="text-default-color-2 gr-hover-text-blue-3" href="#">.</a></li>
+                      <li><a class="text-default-color-2 gr-hover-text-blue-3" href="#">Instagram</a></li>
+                    </ul>
+                  </div>
+                  <div class="border-top border-default-color-4 pt-10">
+                    <div class="mb-3">
+                      <img class="w-100" src="./image/home-6/png/payment-1.png" alt="">
+                    </div>
+                    <div class="mb-3">
+                      <img class="w-100" src="./image/home-6/png/payment-2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <!-- End Single Widgets -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Area -->
+  </div>
+  <!-- Vendor Scripts -->
+  <script src="js/vendor.min.js"></script>
+  <!-- Plugin's Scripts -->
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="./plugins/counter-up/jquery.waypoints.min.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
