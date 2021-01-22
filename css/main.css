@@ -79,6 +79,8 @@ body {
   --border-color-3: #eceff4;
   --border-color-4: #3b4656;
   --border-color-5: #1d293f;
+  font-family: "Poppins" !important;
+  letter-spacing: 1px;
 }
 
 .default-logo,
@@ -660,7 +662,6 @@ body[data-theme="light"] .dark-mode-texts .light-shape.default-shape,
 .main-menu > li > .nav-link {
   color: var(--color-headings) !important;
   font-size: 16px;
-  text-transform: capitalize;
   font-weight: 300;
   position: relative;
 }
@@ -734,7 +735,6 @@ body[data-theme="light"] .dark-mode-texts .light-shape.default-shape,
 .gr-menu-dropdown > .drop-menu-item {
   color: #000;
   font-size: 16px;
-  text-transform: capitalize;
   font-weight: 300;
   padding-left: 30px;
   padding-top: 10px;
@@ -1484,7 +1484,7 @@ body[data-theme="light"] .dark-mode-texts .light-shape.default-shape,
   border-color: #0f53fa;
   background-color: #0f53fa;
   content: "\eab2";
-  font-family: "Grayic";
+  font-family: "Poppins";
   color: #fff;
   font-size: 11px;
   text-align: center;
@@ -3844,4 +3844,13 @@ div#loading img {
 
 .available-on {
   font-size: 115%;
+}
+
+.mt-lg-40,
+.my-lg-40 {
+  margin-top: 22.625rem !important;
+}
+
+a {"
+  font-family: "Poppins" !important;
 }

@@ -2793,7 +2793,7 @@ textarea.form-control {
 
 .btn {
   display: inline-block;
-  font-family: "Circular Std", sans-serif;
+  font-family: "Poppins" !important;
   font-weight: 700;
   color: var(--color-texts);
   text-align: center;
@@ -17766,6 +17766,7 @@ button.bg-dark:focus {
   .my-lg-35 {
     margin-top: 15.625rem !important;
   }
+ 
   .mr-lg-35,
   .mx-lg-35 {
     margin-right: 15.625rem !important;
