@@ -3846,11 +3846,26 @@ div#loading img {
   font-size: 115%;
 }
 
-.mt-lg-40,
-.my-lg-40 {
-  margin-top: 22.625rem !important;
+
+@media (min-width: 992px) {
+  .mt-lg-40,
+  .my-lg-40 {
+    margin-top: 22.625rem !important;
+  }
 }
 
-a {"
+a {
   font-family: "Poppins" !important;
+}
+
+.a-landing {
+  background: #40bfff !important;
+  border: 1px solid #40bfff;
+  transition: 0.2s linear;
+}
+
+.a-landing:hover {
+  border: 1px solid var(--color-headings);
+  background: var(--color-headings) !important;
+  transition: 0.2s linear;
 }
