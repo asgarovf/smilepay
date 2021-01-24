@@ -3803,7 +3803,7 @@ div#loading img {
 .nav-brand {
   color: #1d293f;
   font-size: 200%;
-  font-weight: bold;
+  font-weight: 500;
 }
 .nav-brand:hover {
   color: black;
