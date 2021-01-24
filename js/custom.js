@@ -607,3 +607,12 @@ $(window).load(function () {
 $(document).ready(function () {
   $(this).scrollTop(0);
 });
+
+$("#how-it-works-btn").click(() => {
+  $("html, body").animate(
+    {
+      scrollTop: $("#how-it-works").offset().top,
+    },
+    800
+  );
+});
