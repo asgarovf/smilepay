@@ -3949,3 +3949,7 @@ a {
 .nav-link:hover {
   color: #1d293f;
 }
+
+p {
+  font-weight: 200 !important;
+}
