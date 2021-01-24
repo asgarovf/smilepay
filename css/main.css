@@ -3939,3 +3939,13 @@ a {
     transform: translateY(0%);
   }
 }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .download-button {
+    display: none !important;
+  }
+}
+
+.nav-link:hover {
+  color: #1d293f;
+}
